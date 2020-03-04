@@ -1,0 +1,81 @@
+.Home {
+    width: 100%;
+    height: 100vh;
+}
+
+.Home .content {
+    height: 55vh;
+    padding-top: 35px;
+    background: rgb(43,88,111);
+    background: linear-gradient(170deg, rgba(43,88,111,1) 0%, rgba(28,50,64,1) 42%, rgba(11,12,14,1) 100%);
+}
+
+.Home .content img {
+    width: 295px;
+}
+
+.Home .content .button {
+    background-color: transparent;
+    border: 2px solid #2E863F;
+    border-radius: 50px;
+    padding: 10px 18px;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .4s all;
+}
+
+.Home .content .button:hover {
+    background-color: #2E863F;
+}
+
+.Home .content .headers {
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+}
+
+.Home .content .headers:before {
+    content: '';
+    display: block;
+    margin: 0 auto 12px auto;
+    width: 48px;
+    height: 4px;
+    background-color: #2E863F;
+}
+
+.Home .content h1 {
+    margin: 0 0 22px 0;
+    font-family: Oswald;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3.6em;
+    text-shadow: 7px 5px 5px rgba(0,0,0,0.65);
+}
+
+.Home .content h3 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.Home .banner {
+    width: 100%;
+    height: 45vh;
+    background-image: url('../../assets/images/banner-bottom.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.Home .overlay {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 84%);
+}

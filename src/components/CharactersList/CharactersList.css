@@ -1,0 +1,62 @@
+.List {
+    width: 95%;
+    margin: 85px auto;
+    color: #fff;
+}
+
+.List h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.List h2:before {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 4px;
+    background-color: #2E863F;
+}
+
+.List .cards {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 1rem; 
+    justify-content: space-between; 
+}
+
+.List .pagination {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.List .pagination ul {
+    list-style: none;
+}
+
+.List .pagination li {
+    display: inline-block;
+    border-radius: 6px;
+    margin-right: 5px;
+    background-color: rgb(43, 88, 111, .5);
+    cursor: pointer;
+}
+
+.List .pagination li a {
+    width: 100%;
+    padding: 0 12px;
+    border-radius: 6px;
+    outline: none;
+}
+
+.List .pagination li:hover {
+    background-color: rgb(43, 88, 111);
+}
+
+.List .pagination li.disabled {
+    cursor: not-allowed;
+    opacity: .3;
+}
+
+.List .pagination li.pageActive {
+    background-color: #2E863F;
+}

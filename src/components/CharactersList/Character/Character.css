@@ -1,0 +1,84 @@
+.Character {
+    width: 100%;
+    height: 245px;
+    margin-bottom: 20px;
+    background-color: black;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000;
+  }
+
+.Character .overlay {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    background: rgba(43, 88, 111, .9);
+    color: #FEF5DF;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+
+.Character .items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+
+.Character .head {
+    font-size: 30px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+.Character .head hr {
+    display: block;
+    width: 0;
+    border: none;
+    border-bottom: solid 2px #FEF5DF;
+    position: absolute;
+    bottom: 0; left: 20px;
+    transition: all .5s;
+}
+
+.Character .details {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: 'Lato', sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+  
+}
+.Character .details i {
+    font-size: 16px;
+}
+
+.Character .details span {
+    margin-left: 10px;
+}
+
+.Character:hover .overlay {
+  opacity: 1;
+  
+}
+
+.Character:hover .head {
+    transform: translateY(0px);
+}
+  
+.Character:hover hr {
+    width: 75px;
+    transition-delay: 0.4s;
+}
+  
+.Character:hover .details {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+}
